@@ -1,0 +1,75 @@
+/* Estilo básico para el cuerpo de la página */
+body {
+  font-family: 'Arial', sans-serif; /* Fuente base */
+  background-color: #f4f4f4; /* Color de fondo suave */
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal para la aplicación */
+.container {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: auto; /* Centra el contenedor */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para encabezados */
+h1, h2, h3 {
+  color: #333; /* Color del texto */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilo para párrafos */
+p {
+  color: #666; /* Color del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilo de botones */
+button {
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+button:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo para listas */
+ul {
+  list-style-type: none; /* Sin viñetas */
+  padding: 0; /* Sin espaciado interno */
+}
+
+li {
+  margin-bottom: 8px; /* Espaciado inferior entre elementos de la lista */
+}
+
+/* Estilo para tarjetas */
+.producto-card, .ticket, .articulos {
+  background-color: #fff; /* Fondo blanco para tarjetas */
+  border: 1px solid #ddd; /* Borde suave */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 16px; /* Espaciado interno */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin-bottom: 20px; /* Espaciado inferior entre tarjetas */
+}
+
+/* Flexbox para distribuir elementos */
+.flex {
+  display: flex; /* Flexbox */
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten */
+  justify-content: space-between; /* Espaciado entre elementos */
+}
+
+/* Estilo específico para el ticket de compra */
+.ticket {
+  border: 1px solid #ddd; /* Borde */
+  padding: 16px; /* Espaciado interno */
+  background-color: #f9f9f9; /* Fondo claro */
+}
