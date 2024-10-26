@@ -1,1 +1,23 @@
-<p>ejercicio8 works!</p>
+<div class="articulos">
+  <h2>Total de la compra</h2>
+  <div class="articulos">
+    <h2>Artículos</h2>
+    <div *ngFor="let articulo of articulos" class="articulo">
+      <span>{{ articulo.nombre }} - ${{ articulo.precio.toFixed(2) }}</span>
+      <span> Cantidad: {{ articulo.cantidad }}</span>
+      <button (click)="aumentarCantidad(articulo)">+</button>
+      <button (click)="disminuirCantidad(articulo)">-</button>
+    </div>
+  </div>
+
+  <div class="ticket">
+    <h2>Ticket de Compra</h2>
+    <ul>
+      <li *ngFor="let articulo of articulos">
+        {{ articulo.nombre }}: {{ articulo.cantidad }} x ${{ articulo.precio.toFixed(2) }} = ${{ (articulo.precio * articulo.cantidad).toFixed(2) }}
+      </li>
+    </ul>
+    <hr />
+    <strong>Total: ${{ calcularTotal().toFixed(2) }}</strong>
+  </div>
+</div>

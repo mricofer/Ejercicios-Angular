@@ -1,8 +1,23 @@
-<app-ejercicio1 [nombre]="'Maikel'"></app-ejercicio1>
-<app-ejercicio2></app-ejercicio2>
-<app-ejercicio3></app-ejercicio3>
-<app-ejercicio4></app-ejercicio4>
-<app-ejercicio5></app-ejercicio5>
-<app-ejercicio6></app-ejercicio6>
-<app-ejercicio7></app-ejercicio7>
-<app-ejercicio8></app-ejercicio8>
+<div class="container">
+  <app-ejercicio1 [nombre]="'Maikel'"></app-ejercicio1>
+  <app-ejercicio2></app-ejercicio2>
+  <app-ejercicio3></app-ejercicio3>
+  <app-ejercicio4></app-ejercicio4>
+  <app-ejercicio5></app-ejercicio5>
+  <div class="articulos">
+    <h2>Artículos</h2>
+    <app-ejercicio6
+      [nombre]="'Laptop HP'"
+      [descripcion]="'Laptop de 15 pulgadas con procesador Intel i7 y 8GB de RAM.'"
+      [precio]="1200"
+    ></app-ejercicio6>
+
+    <app-ejercicio6
+      [nombre]="'Smartphone Samsung'"
+      [descripcion]="'Pantalla AMOLED de 6.5 pulgadas, cámara de 64MP.'"
+      [precio]="800"
+    ></app-ejercicio6>
+  </div>
+  <app-ejercicio7></app-ejercicio7>
+  <app-ejercicio8></app-ejercicio8>
+</div>
