@@ -1,1 +1,12 @@
-<p>ejercicio5 works!</p>
+<div>
+  <h3>Deja un Comentario</h3>
+  <input
+    type="text"
+    [(ngModel)]="nuevoComentario"
+    placeholder="Escribe tu comentario"
+  />
+  <button (click)="enviarComentario()">Enviar</button>
+  <ul>
+    <li *ngFor="let comentario of listaComentarios">{{ comentario }}</li>
+  </ul>
+</div>
