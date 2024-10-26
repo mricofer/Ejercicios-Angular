@@ -1,0 +1,18 @@
+<div>
+  <h2>Lista de Tareas</h2>
+
+  <!-- Campo de entrada para la nueva tarea -->
+  <input
+    type="text"
+    [(ngModel)]="nuevaTarea"
+    placeholder="Escribe una nueva tarea"
+  />
+
+  <!-- Botón para agregar la tarea -->
+  <button (click)="agregarTarea()">Agregar Tarea</button>
+
+  <!-- Lista de tareas -->
+  <ul>
+    <li *ngFor="let tarea of tareas">{{ tarea }}</li>
+  </ul>
+</div>
