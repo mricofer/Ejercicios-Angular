@@ -1,1 +1,20 @@
-<p>ejercicio4 works!</p>
+<div>
+  <h2>Temporizador de Cuenta Regresiva</h2>
+
+  <!-- Campo de entrada para el tiempo inicial en segundos -->
+  <input
+    type="number"
+    [(ngModel)]="tiempoInicial"
+    placeholder="Tiempo en segundos"
+    min="0"
+  />
+
+  <!-- Botones para iniciar y detener el temporizador -->
+  <button (click)="iniciarTemporizador()">Iniciar</button>
+  <button (click)="detenerTemporizador()">Detener</button>
+
+  <!-- Mostrar el tiempo restante -->
+  <div *ngIf="tiempoRestante >= 0">
+    <h3>Tiempo restante: {{ tiempoRestante }} segundos</h3>
+  </div>
+</div>
