@@ -1,1 +1,10 @@
-<p>ejercicio6 works!</p>
+<div class="producto-card">
+  <!-- Nombre del producto -->
+  <h3>{{ nombre }}</h3>
+
+  <!-- Descripción del producto -->
+  <p>{{ descripcion }}</p>
+
+  <!-- Precio del producto -->
+  <p><strong>Precio:</strong> {{ precio | currency:'USD' }}</p>
+</div>
